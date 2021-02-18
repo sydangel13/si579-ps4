@@ -1,0 +1,76 @@
+html{
+    scroll-behavior: smooth;
+    position: relative;
+  }
+
+body{
+  padding: 0px 20px;
+  background-color: #d8e1e8;
+}
+
+ul{
+  padding:0px 5px;
+}
+
+#list1{
+    border: 3px solid #cdff6f;
+    font-size: 1em;
+}
+
+#list2{
+  border: 10px solid azure;
+}
+
+h1{
+    font-size: 2.75em;
+    font-style: italic;
+    color: #054d85;
+}
+
+h2{
+    font-size: 2.25em;
+}
+
+p{
+    font-size: 1.25em;
+  }
+
+#coloring{
+  color:#054d85;
+}
+
+#coloring2{
+  color: azure;
+}
+
+img{
+  padding: 0px 10px 10px 0px;
+}
+
+#animation{
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    animation: typing 7.0s steps(60, end);
+    -webkit-animation: typing 7.0s steps(40, end);
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @media screen and  (prefers-reduced-motion: reduce){
+
+    html{
+      scroll-behavior: auto;}
+
+    #animation{
+        animation: none;
+    }
+  }
